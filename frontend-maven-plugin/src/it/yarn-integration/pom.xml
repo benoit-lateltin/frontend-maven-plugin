@@ -22,6 +22,16 @@
                 <executions>
 
                     <execution>
+                        <id>install volta</id>
+                        <goals>
+                            <goal>install-volta</goal>
+                        </goals>
+                        <configuration>
+                            <voltaVersion>v0.7.2</voltaVersion>
+                        </configuration>
+                    </execution>
+
+                    <execution>
                         <id>install node and yarn</id>
                         <goals>
                             <goal>install-node-and-yarn</goal>

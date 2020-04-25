@@ -114,7 +114,7 @@ public class ProxyConfig {
          *
          * We could do the conversion here but npm seems to accept the bar separated list regardless
          * of what the documentation says so we do no conversion for now.
-         * @return
+         * @return non proxy hosts separated by a pipe (`|`)
          */
         public String getNonProxyHosts() {
             return nonProxyHosts;

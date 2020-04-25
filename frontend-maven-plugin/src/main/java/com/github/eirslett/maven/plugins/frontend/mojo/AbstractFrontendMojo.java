@@ -78,6 +78,7 @@ public abstract class AbstractFrontendMojo extends AbstractMojo {
 
     /**
      * Implemented by children to determine if this execution should be skipped.
+     * @return should execution be skipped
      */
     protected abstract boolean skipExecution();
 

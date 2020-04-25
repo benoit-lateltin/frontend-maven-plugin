@@ -32,6 +32,10 @@ public final class FrontendPluginFactory {
     public YarnInstaller getYarnInstaller(ProxyConfig proxy) {
         return new YarnInstaller(getInstallConfig(), new DefaultArchiveExtractor(), new DefaultFileDownloader(proxy));
     }
+
+    public VoltaInstaller getVoltaInstaller(ProxyConfig proxy) {
+        return new VoltaInstaller(getInstallConfig(), new DefaultArchiveExtractor(), new DefaultFileDownloader(proxy));
+    }
     
     public BowerRunner getBowerRunner(ProxyConfig proxy) {
         return new DefaultBowerRunner(getExecutorConfig(), proxy);
